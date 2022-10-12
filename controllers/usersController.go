@@ -117,8 +117,6 @@ func Validade(c *gin.Context) {
 		Email: user.(models.User).Email,
 	}
 
-
-	// test
 	if !ok {
 		c.JSON(http.StatusNotFound, gin.H{
 			"data": "User not found.",
