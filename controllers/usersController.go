@@ -112,6 +112,8 @@ func Validade(c *gin.Context) {
 
 	user, ok := c.Get("user")
 
+	// add comment
+
 	userResponse := response{
 		Id:    user.(models.User).ID,
 		Email: user.(models.User).Email,
